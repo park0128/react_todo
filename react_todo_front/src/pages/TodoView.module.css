@@ -1,0 +1,61 @@
+.page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.page_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.todo_view_info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.todo_view_info li {
+  display: flex;
+  padding: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.todo_view_info li:first-child,
+.todo_view_info li:nth-child(3),
+.todo_view_info li:nth-child(5),
+.todo_view_info li:nth-child(7) {
+  font-weight: bold;
+  width: 80px;
+}
+
+.todo_view_info li:nth-child(2),
+.todo_view_info li:nth-child(4),
+.todo_view_info li:nth-child(6),
+.todo_view_info li:nth-child(8) {
+  flex: 1;
+}
+
+.button_wrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.button_wrap button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}

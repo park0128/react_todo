@@ -1,9 +1,20 @@
-import { useState } from 'react';
+//03.06
+import Header from './components/commons/Header';
+import { Route, Routes } from 'react-router-dom';
+import TodoListPage from './pages/TodoListPage';
+import TodoRegistPage from './pages/TodoRegistPage';
+import TodoView from './pages/TodoView';
 
 function App() {
   return (
     <div>
-      <h1>메인페이지</h1>
+      <Header />
+      <Routes>
+        <Route path="/" element={<TodoListPage />} />
+        <Route path="/userList" element={<TodoListPage />} />
+        <Route path="/regist" element={<TodoRegistPage />} />
+        <Route path="/todo/:todoNo" element={<TodoView />} />
+      </Routes>
     </div>
   );
 }
